@@ -160,6 +160,7 @@ export const CampingView: React.FC<CampingViewProps> = ({ onBack }) => {
                     { label: '景色', a: '⭐⭐⭐⭐⭐', b: '⭐⭐⭐⭐' },
                     { label: '风力', a: '大 (12月)', b: '中等' },
                     { label: '补给', a: '❌ 无', b: '✔ 村店/热食' },
+                    { label: '厕所', a: '✔ 有', b: '✔ 有' },
                     { label: '新手', a: '中等', b: '⭐⭐⭐⭐⭐' },
                 ].map((row, idx) => (
                     <div key={idx} className="grid grid-cols-4 border-b border-slate-100 last:border-0 p-2 items-center">
@@ -209,7 +210,7 @@ export const CampingView: React.FC<CampingViewProps> = ({ onBack }) => {
                         <Tent size={12} /> ③ 夜间保暖
                     </h4>
                     <p className="text-xs text-slate-600">
-                        睡袋舒适温标建议 <span className="font-bold">0~5°C</span>。睡垫 R 值 > 2。睡前吃点热食，带一件轻羽绒。
+                        睡袋舒适温标建议 <span className="font-bold">0~5°C</span>。睡垫 R 值 &gt; 2。睡前吃点热食，带一件轻羽绒。
                     </p>
                 </div>
             </div>
